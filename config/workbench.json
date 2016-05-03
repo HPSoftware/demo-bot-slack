@@ -1,0 +1,14 @@
+{
+	"default": "I have no clue what y'all saying!",
+    "all": {
+        ".*hello.*": "HDM bot will humbly serve thou",
+        ".*yo.*": "yo yo yo, what's up dog",
+        ".*hi.*": "high? i'm totally baked"
+    },
+    "direct_mention": {
+
+    },
+    "direct_message": {
+
+    }
+}
