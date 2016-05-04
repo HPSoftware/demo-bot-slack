@@ -1,9 +1,28 @@
 {
-	"default": "I have no clue what y'all saying!",
+    "default": "I have no clue what y'all saying!",
     "all": {
-        ".*hello.*": "HDM bot will humbly serve thou",
-        ".*yo.*": "yo yo yo, what's up dog",
-        ".*hi.*": "high? i'm totally baked"
+        ".*provision.*": {
+            "text": "Hi, I found the following templates for you:",
+            "attachments": [{
+                "title": "MBaaS/Android/IDE/git delivery template",
+                "text": "This template provisions:\n* an MBaaS tenant\n* AndroidIDE tenant\n* connected git repo",
+                "color": "#7CD197",
+                "image_url": "http://i.stack.imgur.com/VIqhs.png",
+                "mrkdwn_in": ["text"]
+            },{
+                "title": "MBaaS/iOS/Android integration template",
+                "text": "This template provisions:\n* an MBaaS Queue tenant\n* Android/iOS connectors",
+                "color": "#7CD197",
+                "image_url": "http://i.stack.imgur.com/VIqhs.png",
+                "mrkdwn_in": ["text"]
+            }]            
+        },
+        ".*yo.*": {
+            "text": "yo yo yo, what's up dog"
+        },
+        ".*hi.*": {
+            "text": "high? i'm totally baked"
+        }
     },
     "direct_mention": {
 

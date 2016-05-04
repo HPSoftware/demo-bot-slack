@@ -28,15 +28,21 @@ function botReply(bot, message, message_map_category) {
     var message_keys = Object.keys(message_map.all).concat(
         Object.keys(message_map[message_map_category]));
 
+	console.log('HDM bot all+'+message_map_category+' keys: '+message_keys.length);
+
     var replied = false;
 
     message_keys.forEach(function(key) {
         var keyRegexp = new RegExp(key, 'i');
+		console.log('HDM bot compare key '+key+' to: '+message.text);
         if (keyRegexp.test(message.text)) {
+        	var bot_reply_msg = {};
             if (message_map.all[key])
-                bot.reply(message, message_map.all[key]);
-            else if (message_map[message_map_category][key])
-                bot.reply(message, message_map[message_map_category][key]);
+                bot_reply_msg = message_map.all[key];
+            else 
+                bot_reply_msg = message_map[message_map_category][key];
+			console.log('HDM bot reply with '+JSON.stringify(bot_reply_msg)+' to: '+message.text);
+            bot.reply(message, bot_reply_msg);
             replied = true;
         }
     });
@@ -46,7 +52,7 @@ function botReply(bot, message, message_map_category) {
 
 // reply to a direct mention - @bot hello
 controller.on('direct_mention', function(bot, message) {
-    console.log('HDM bot direct mention');
+    console.log('HDM bot direct mention: '+JSON.stringify(message));
     // reply to _message_ by using the _bot_ object
     botReply(bot, message, "direct_mention");
 });
