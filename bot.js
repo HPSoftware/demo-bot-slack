@@ -1,12 +1,26 @@
+var fs = require('fs');
+
 var token = process.env.SLACK_BOT_TOKEN || '';
 var message_map = {};
 var bot_type = process.env.SLACK_BOT_TYPE || 'default';
-require('fs').readFile('./config/' + bot_type + '.json', function(err, data) {
-    if (err)
-        console.log('Failed to load bot ' + bot_type + ' configuration');
-    else
-        message_map = JSON.parse(data);
+function loadConfig(){
+	fs.readFile('./config/' + bot_type + '.json', function(err, data) {
+	    if (err)
+	        console.log('Failed to load bot ' + bot_type + ' configuration');
+	    else if (data.length)
+	        message_map = JSON.parse(data);
+	    else
+	    	console.log('HDM bot configuration file has no data')
+	});
+}
+fs.watch('./config/' + bot_type + '.json', function(event, filename){
+	if (event=="change")
+	{
+		console.log('HDM bot reloading configuration');
+		loadConfig();
+	}
 });
+loadConfig();
 
 /* slack infra */
 
