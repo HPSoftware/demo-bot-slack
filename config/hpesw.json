@@ -1,0 +1,73 @@
+{
+    "default": "I have no clue what y'all saying!",
+    "all": {
+        ".*alm.*get.*task.*": {
+            "text": "This is what you should work on today:",
+            "attachments": [{
+                "title": "Task item title",
+                "text": "Task item details, need 2 integrations with ERP backend",
+                "color": "#7CD197",
+                "image_url": "<url to task image>",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*alm.*create.*task.*": {
+            "text": "Added the following task:",
+            "attachments": [{
+                "title": "Task item title",
+                "text": "Task item details, need to add API for backend, comments attached",
+                "color": "#7CD197",
+                "image_url": "<url to task image>",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*quality.*status.*": {
+            "text": "Your feature is doing well!",
+            "attachments": [{
+                "title": "Quality report/graphs from ALM, per feature",
+                "text": "details",
+                "color": "#7CD197",
+                "image_url": "<url to quality image>",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*network.*profiles.*": {
+            "text": "There are 5 available network profiles for your project: 3G good, 3G intermediate, 3G poor, 4G, wifi"
+        },
+        ".*staging.*network.*": {
+            "text": "Setting network conditions per profile <profile name>"
+        },
+        ".*load.*staging.*": {
+            "text": "Acquiring load resources for staging load testing...",
+        },
+        ".*performance.*status.*": {
+            "text": "Availability and perfromance in staging is good:",
+            "attachments": [{
+                "title": "Quality report/graphs from StormRunner",
+                "text": "details",
+                "color": "#7CD197",
+                "image_url": "<url to quality image>",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*done.*": {
+            "text": "All 'Done' creteria met",
+            "attachments": [{
+                "title": "Done report/graphs from ALM/AGM",
+                "text": "details",
+                "color": "#7CD197",
+                "image_url": "<url to image>",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*hi.*": {
+            "text": "high? i'm totally baked"
+        }
+    },
+    "direct_mention": {
+
+    },
+    "direct_message": {
+
+    }
+}

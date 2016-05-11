@@ -1,24 +1,118 @@
 {
     "default": "I have no clue what y'all saying!",
     "all": {
-        ".*provision.*": {
-            "text": "Hi, I found the following templates for you:",
+        ".*provision.*mobile.*": {
+            "text": "Hi, I found your following recent templates (for full list, ask me 'full'):",
             "attachments": [{
-                "title": "MBaaS/Android/IDE/git delivery template",
-                "text": "This template provisions:\n* an MBaaS tenant\n* AndroidIDE tenant\n* connected git repo",
+                "title": "#1 MBaaS/Android/IDE/git delivery template",
+                "text": "This template provisions:\n* an MBaaS tenant\n* AndroidIDE tenant\n* connected git repo\n* ALM project",
                 "color": "#7CD197",
-                "image_url": "http://i.stack.imgur.com/VIqhs.png",
+                "image_url": "https://lh3.googleusercontent.com/-L2LfZAGb2s8/VzLCzMiQH-I/AAAAAAAAEbU/rhL3tw7Uak89OYAOe4naobf-uwAj_usPwCCo/s800/image-management-mobile-apps-grpc.png",
                 "mrkdwn_in": ["text"]
-            },{
-                "title": "MBaaS/iOS/Android integration template",
+            }, {
+                "title": "#2 MBaaS/iOS/Android integration template",
                 "text": "This template provisions:\n* an MBaaS Queue tenant\n* Android/iOS connectors",
                 "color": "#7CD197",
+                "image_url": "https://lh3.googleusercontent.com/-2EKNgNc5gVw/VzLCzfy4ciI/AAAAAAAAEbg/EWcqP540fqwfn-PZNOBXVdpEw6MQdL2KwCCo/s604/ops-continuum.png",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*customize.*1": {
+            "text": "gotcha, your template is updated as follows:",
+            "attachments": [{
+                "title": "#1 MBaaS/Android/IDE/git delivery template (custom)",
+                "text": "This template provisions:\n* an MBaaS tenant (on public cloud)\n* AndroidIDE tenant\n* connected git repo (on private cloud)\n* ALM project",
+                "color": "#7CD197",
                 "image_url": "http://i.stack.imgur.com/VIqhs.png",
                 "mrkdwn_in": ["text"]
-            }]            
+            }]
         },
-        ".*yo.*": {
-            "text": "yo yo yo, what's up dog"
+        ".*select.*template.*1": {
+            "text": "gotcha - your request is assigned #123. To track provisioning progress, @hdm-bot: track #123"
+        },
+        ".*track.*123": {
+            "text": "Here's the status of your request #123:",
+            "attachments": [{
+                "title": "Request #123 - status completed",
+                "text": "MBaaS url: \nAndroidIDE url:\nALM url (project): \ngit url: ",
+                "color": "#7CD197",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*where.*defect": {
+            "text": "Your defect management is at url:\n You can also @hpesw-bot: alm open"
+        },
+        ".*services.*up.*": {
+            "text": "All services are up:",
+            "attachments": [{
+                "title": "Workbench <project-name> services status",
+                "color": "#7CD197",
+                "image_url": "http://i.stack.imgur.com/VIqhs.png",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*add.*API.*": {
+            "text": "API <API-NAME> added to project model\nAPI <API-NAME> direct route added to MBaaS\nAPI <API-NAME> stub added to git repo, at /etc/etc/what/here"
+        },
+        ".*real.*devices.*": {
+            "text": "The following mobile devices are available for your project:",
+            "attachments": [{
+                "title": "<device type/name>, Android 5.1, <location>",
+                "color": "#7CD197",
+                "image_url": "<url of location on google maps>",
+                "mrkdwn_in": ["text"]
+            },
+            {
+                "title": "<device type/name>, Android 6.0, <location>",
+                "color": "#7CD197",
+                "image_url": "<url of location on google maps>",
+                "mrkdwn_in": ["text"]
+            },
+            {
+                "title": "<device type/name>, Android 6.0, <location>",
+                "color": "#7CD197",
+                "image_url": "<url of location on google maps>",
+                "mrkdwn_in": ["text"]
+            },
+            {
+                "title": "<device type/name>, iOS 9.0, <location>",
+                "color": "#7CD197",
+                "image_url": "<url of location on google maps>",
+                "mrkdwn_in": ["text"]
+            },
+            {
+                "title": "<device type/name>, iOS 9.0, <location>",
+                "color": "#7CD197",
+                "image_url": "<url of location on google maps>",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*select.*device.*": {
+            "text": "Adding selected devices to project resources pool"
+        },
+        ".*provision.*staging.*": {
+            "text": "Provisioning staging environment, you can track progress @workbench-bot track request #341"
+        },
+        ".*track.*341": {
+            "text": "Here's the status of your request #341:",
+            "attachments": [{
+                "title": "Request #341 - status completed",
+                "text": "Staging env provisioned and added to project pipeline\n<details of what is provisioned where - private/public>",
+                "color": "#7CD197",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*push.*": {
+            "text": "Initating gradual release of feature <name>. Track @hpesw-bot track release"
+        },
+        ".*track.*release.*": {
+            "text": "Feature <name> currently exposed to 15%, no detected issues",
+            "attachments": [{
+                "title": "Feature exposure image",
+                "text": "AppPulse Mobile demographics split, quality metrics",
+                "color": "#7CD197",
+                "mrkdwn_in": ["text"]
+            }]
         },
         ".*hi.*": {
             "text": "high? i'm totally baked"

@@ -1,0 +1,40 @@
+{
+    "default": "One API to rule them all",
+    "all": {
+        ".*stat.*": {
+            "text": "The API <API name> stats are:",
+            "attachments": [{
+                "title": "this is propel?",
+                "text": "stats in text",
+                "color": "#FFFF00",
+                "image_url": "http://i.stack.imgur.com/VIqhs.png",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*stat.*INotAvail.*": {
+            "text": "404: no API found. To create a request for this API, @hpesw-bot: alm create user-story"
+        },
+        ".*exampl.*": {
+            "text": "format example in code syntax"
+        },
+        ".*policy.*": {
+            "text": "table of policy: colums are private/public, rows are access/store/share"
+        },
+        ".*performance.*status.*": {
+            "text": "API <API name> usage rate exceeds contract expectations, consider optimzing code or reaching to API owner for validation:",
+            "attachments": [{
+                "title": "API usage graph",
+                "text": "details",
+                "color": "#7CD197",
+                "image_url": "<url to API usage image>",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+    },
+    "direct_mention": {
+
+    },
+    "direct_message": {
+
+    }
+}
