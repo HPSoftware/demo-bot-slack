@@ -4,19 +4,19 @@ This is an implementaion of a simple Slack bot, based on node.js and the [botkit
 
 ## Installation and usage
 
-* Clone from github and run 'npm install'.
+* Clone from github and run `npm install`.
 * Create/join a Slack team and create bot(s) in that group (see [Slack docs](https://get.slack.help/hc/en-us/categories/200111606-Using-Slack)). For each bot you want to run with hdm-bot-slack, copy the bot [API token](https://get.slack.help/hc/en-us/articles/215770388-Creating-and-regenerating-API-tokens).
-* Write a conversation json configuration file and place it under the 'config' folder (see configuraiton file format below) .
+* Write a conversation json configuration file and place it under the `config` folder (see configuraiton file format below) .
 * Set the following environment variables:
-** 'SLACK_BOT_TOKEN' - the API token copied from Slack
-** 'SLACK_BOT_TYPE' - the name of the json configuration file to use for this bot execution (without the js extnesion, e.g. 'SET SLACK_BOT_TYPE=workbench' will run a bot with the configuraiton file 'config/workbench.json').
+  * `SLACK_BOT_TOKEN` - the API token copied from Slack
+  * `SLACK_BOT_TYPE` - the name of the json configuration file to use for this bot execution (without the js extnesion, e.g. `SET SLACK_BOT_TYPE=workbench` will run a bot with the configuraiton file `config/workbench.json`).
 
 ## Conversation configuration file format
 
 hdm-bot-slack is using json to match types of messages to keywords to replies.
-A first key of 'default' specifies what the bot will answer if no match is found. A second key of 'all' specifies keywords that will be matched on all event types. Subsequent keys will specify the event name and a list of keywords to match.
+A first key of `default` specifies what the bot will answer if no match is found. A second key of `all` specifies keywords that will be matched on all event types. Subsequent keys will specify the event name and a list of keywords to match.
 All keyword keys will be matched as javascript regular expressions, and can use any regexp expression format. Reply format is [Slack's message format](https://api.slack.com/docs/formatting), including attachments.
-'''
+```
 {
 	'default': 'a default repsonse',
 	'all': {
@@ -35,15 +35,15 @@ All keyword keys will be matched as javascript regular expressions, and can use 
 	'direct_message': {
 	}
 }
-'''
+```
 The bot will match keywords by the following order:
-- Keywords under the 'all' category, from top to bottom
+- Keywords under the `all` category, from top to bottom
 - Keywords in subsequent categories (top to bottom for both categories and keywords within)
 - If no match was found, the default reply
 If a match is found, the reply is sent and the lookup is done (i.e. you can't match more than one reply to an event).
 
-** License
+## License
 MIT License
 
-** Credits
+## Credits
 * Inbar Shani - @inbarshani
