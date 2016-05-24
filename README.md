@@ -42,5 +42,8 @@ The bot will match keywords by the following order:
 - If no match was found, the default reply
 If a match is found, the reply is sent and the lookup is done (i.e. you can't match more than one reply to an event).
 
-** Author(s)
+** License
+MIT License
+
+** Credits
 * Inbar Shani - @inbarshani
