@@ -6,8 +6,8 @@
             "attachments": [{
                 "title": "Task item title",
                 "text": "Task item details, need 2 integrations with ERP backend",
-                "color": "#7CD197",
-                "image_url": "<url to task image>",
+                "color": "#7ec0ee",
+                "image_url": "https://lh3.googleusercontent.com/-5Nhv489xNBU/VzLdOdU5qTI/AAAAAAAAEbw/zJThTvHj21cklSMVdHLTi7u-XSdec2vJACCo/s200/task.png",
                 "mrkdwn_in": ["text"]
             }]
         },
@@ -38,7 +38,7 @@
             "text": "Setting network conditions per profile <profile name>"
         },
         ".*load.*staging.*": {
-            "text": "Acquiring load resources for staging load testing...",
+            "text": "Acquiring load resources for staging load testing..."
         },
         ".*performance.*status.*": {
             "text": "Availability and perfromance in staging is good:",

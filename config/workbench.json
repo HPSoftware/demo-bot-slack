@@ -23,12 +23,12 @@
                 "title": "#1 MBaaS/Android/IDE/git delivery template (custom)",
                 "text": "This template provisions:\n* an MBaaS tenant (on public cloud)\n* AndroidIDE tenant\n* connected git repo (on private cloud)\n* ALM project",
                 "color": "#7CD197",
-                "image_url": "http://i.stack.imgur.com/VIqhs.png",
+                "image_url": "https://lh3.googleusercontent.com/-L2LfZAGb2s8/VzLCzMiQH-I/AAAAAAAAEbU/rhL3tw7Uak89OYAOe4naobf-uwAj_usPwCCo/s800/image-management-mobile-apps-grpc.png",
                 "mrkdwn_in": ["text"]
             }]
         },
         ".*select.*template.*1": {
-            "text": "gotcha - your request is assigned #123. To track provisioning progress, @hdm-bot: track #123"
+            "text": "gotcha - your request is assigned #123. To track provisioning progress, @workbench-bot: track #123"
         },
         ".*track.*123": {
             "text": "Here's the status of your request #123:",
@@ -39,7 +39,7 @@
                 "mrkdwn_in": ["text"]
             }]
         },
-        ".*where.*defect": {
+        ".*where.*defects": {
             "text": "Your defect management is at url:\n You can also @hpesw-bot: alm open"
         },
         ".*services.*up.*": {

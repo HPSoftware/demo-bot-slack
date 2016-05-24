@@ -29,7 +29,7 @@
                 "image_url": "<url to API usage image>",
                 "mrkdwn_in": ["text"]
             }]
-        },
+        }
     },
     "direct_mention": {
 
