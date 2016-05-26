@@ -14,7 +14,7 @@
         ".*stat.*INotAvail.*": {
             "text": "404: no API found. To create a request for this API, @hpesw-bot: alm create user-story"
         },
-        ".*exampl.*": {
+        ".*give.*example.*": {
             "text": "format example in code syntax"
         },
         ".*policy.*": {

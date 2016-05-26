@@ -39,11 +39,11 @@
                 "mrkdwn_in": ["text"]
             }]
         },
-        ".*where.*defects": {
+        ".*where.*defects.*": {
             "text": "Your defect management is at url:\n You can also @hpesw-bot: alm open"
         },
         ".*services.*up.*": {
-            "text": "All services are up:",
+            "text": "All workbench services are up and running:",
             "attachments": [{
                 "title": "Workbench <project-name> services status",
                 "color": "#7CD197",

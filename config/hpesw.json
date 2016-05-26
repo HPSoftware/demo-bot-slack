@@ -1,7 +1,7 @@
 {
     "default": "I have no clue what y'all saying!",
     "all": {
-        ".*alm.*get.*task.*": {
+        ".*alm.*task.*get.*": {
             "text": "This is what you should work on today:",
             "attachments": [{
                 "title": "Task item title",
