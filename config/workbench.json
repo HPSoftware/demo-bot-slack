@@ -87,7 +87,7 @@
                 "mrkdwn_in": ["text"]
             }]
         },
-        ".*select.*device.*": {
+        ".*select.*devices.*": {
             "text": "Adding selected devices to project resources pool"
         },
         ".*provision.*staging.*": {
