@@ -11,8 +11,8 @@
                 "mrkdwn_in": ["text"]
             }]
         },
-        ".*stat.*INotAvail.*": {
-            "text": "404: no API found. To create a request for this API, @hpesw-bot: alm create user-story"
+        ".*stat.*IGetProviderDetails.*": {
+            "text": "404: no API found. To create a request for this API, @hpesw-bot: alm user-story create"
         },
         ".*give.*example.*": {
             "text": "format example in code syntax"

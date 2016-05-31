@@ -34,20 +34,20 @@
             "text": "Here's the status of your request #123:",
             "attachments": [{
                 "title": "Request #123 - status completed",
-                "text": "MBaaS url: \nAndroidIDE url:\nALM url (project): \ngit url: ",
+                "text": "MBaaS url: https://acmicare.mbaas.com/scalene\nAndroidIDE url: https://msast001pngx.saas.acmi.com/aide/scalene\nALM url (project): https://hpe001alm.saas.acmi.com:8080/\ngit url: ssh://git.saas.acmi.com/scalene",
                 "color": "#7CD197",
                 "mrkdwn_in": ["text"]
             }]
         },
         ".*where.*defects.*": {
-            "text": "Your defect management is at url:\n You can also @hpesw-bot: alm open"
+            "text": "Your defect management is at url: https://hpe001alm.saas.acmi.com:8080/defects\n You can also @hpesw-bot: alm open"
         },
         ".*services.*up.*": {
             "text": "All workbench services are up and running:",
             "attachments": [{
-                "title": "Workbench <project-name> services status",
+                "title": "Workbench SCALENE services status",
                 "color": "#7CD197",
-                "image_url": "http://i.stack.imgur.com/VIqhs.png",
+                "image_url": "http://www.ceeview.com/wp-content/uploads/2014/01/Ceeview-Service-Dashboard.png",
                 "mrkdwn_in": ["text"]
             }]
         },
