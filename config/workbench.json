@@ -115,7 +115,7 @@
             }]
         },
         ".*hi.*": {
-            "text": "high? i'm totally baked"
+            "text": "high? i'm totally baked!"
         }
     },
     "direct_mention": {
