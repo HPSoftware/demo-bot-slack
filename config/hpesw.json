@@ -32,10 +32,10 @@
             }]
         },
         ".*network.*profiles.*": {
-            "text": "There are 5 available network profiles for your project: 3G good, 3G intermediate, 3G poor, 4G, wifi"
+            "text": "There are 3 available network profiles for your project: vpn-low, vpn-medium, vpn-high-capacity."
         },
-        ".*staging.*network.*": {
-            "text": "Setting network conditions per profile <profile name>"
+        ".*enable.*network.*": {
+            "text": "Setting network conditions per profile vpn-high-capacity on staging environment."
         },
         ".*load.*staging.*": {
             "text": "Acquiring load resources for staging load testing..."

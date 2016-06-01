@@ -88,7 +88,7 @@
             }]
         },
         ".*select.*devices.*": {
-            "text": "Adding selected devices to project resources pool"
+            "text": "Adding selected devices to the project's resource pool"
         },
         ".*provision.*staging.*": {
             "text": "Provisioning staging environment, you can track progress @workbench-bot track request #341"
