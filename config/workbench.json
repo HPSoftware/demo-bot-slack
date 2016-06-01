@@ -82,9 +82,8 @@
         ".*track.*deploy.*": {
             "text": "Feature 'Patient sync' currently exposed to 15%, no detected issues",
             "attachments": [{
-                "title": "Feature exposure image",
-                "text": "AppPulse Mobile demographics split, quality metrics",
-                "color": "#7CD197",
+                "title": "Feature exposure map",
+                "image_url": "https://c3.staticflickr.com/8/7308/27120455770_29c82aa9da_b.jpg",
                 "mrkdwn_in": ["text"]
             }]
         },
