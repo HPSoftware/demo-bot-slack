@@ -4,10 +4,10 @@
         ".*alm.*get.*task.*": {
             "text": "This is what you should work on today:",
             "attachments": [{
-                "title": "Task item title",
-                "text": "Task item details, need 2 integrations with ERP backend",
+                "title": "Patient sync",
+                "text": "Patients' data should be synced across CRM and SCALENE",
                 "color": "#7ec0ee",
-                "image_url": "https://irock.jiveon.com/servlet/JiveServlet/previewBody/134122-102-1-127458/task%202.png",
+                "image_url": "https://c1.staticflickr.com/8/7330/27359692736_734fa0c7f0_m.jpg",
                 "mrkdwn_in": ["text"]
             }]
         },
@@ -17,17 +17,21 @@
                 "title": "Task item title",
                 "text": "Task item details, need to add API for backend, comments attached",
                 "color": "#7CD197",
-                "image_url": "<url to task image>",
+                "image_url": "https://flic.kr/p/HFFzsh",
                 "mrkdwn_in": ["text"]
             }]
         },
         ".*release.*status.*": {
             "text": "Your feature is doing well!",
             "attachments": [{
-                "title": "Quality report/graphs from ALM, per feature",
-                "text": "details",
+                "title": "ALM project dashboard",
                 "color": "#7CD197",
-                "image_url": "<url to quality image>",
+                "image_url": "https://c3.staticflickr.com/8/7155/27119522370_5f7b0bfc29_b.jpg",
+                "mrkdwn_in": ["text"]
+            }, {
+                "title": "StormRunner dashboard",
+                "color": "#7CD197",
+                "image_url": "https://c6.staticflickr.com/8/7616/27323437101_e5bf2caed5_z.jpg",
                 "mrkdwn_in": ["text"]
             }]
         },
@@ -35,30 +39,23 @@
             "text": "Metrics for 'all networks' filter:",
             "attachments": [{
                 "title": "Perfromance trend graph",
-                "text": "details",
-                "color": "#7CD197",
-                "image_url": "<url to quality image>",
+                "color": "#FF0000",
+                "image_url": "https://c7.staticflickr.com/8/7030/27119452110_292962a0b4_h.jpg",
                 "mrkdwn_in": ["text"]
             }]
         },
         ".*network.*profiles.*": {
-            "text": "There are 3 available network profiles for your project: vpn-low, vpn-medium, vpn-high-capacity."
-        },
+            "text": "There are 3 available network profiles for your project: vpn-low, vpn-medium, vpn-high-capacity."        },
         ".*create.*run.*": {
-            "text": "Setting network conditions per profile vpn-high-capacity on staging environment."
+            "text": "Setting network conditions per profile vpn-high-capacity on staging environment.",
+            "attachments": [{
+                "title": "vpn-high-capacity",
+                "image_url": "https://c5.staticflickr.com/8/7425/27296349412_3874a4658a_b.jpg",
+                "mrkdwn_in": ["text"]
+            }]
         },
         ".*load.*staging.*": {
             "text": "Acquiring load resources for staging load testing..."
-        },
-        ".*performance.*status.*": {
-            "text": "Availability and perfromance in staging is good:",
-            "attachments": [{
-                "title": "Quality report/graphs from StormRunner",
-                "text": "details",
-                "color": "#7CD197",
-                "image_url": "<url to quality image>",
-                "mrkdwn_in": ["text"]
-            }]
         },
         ".*done.*": {
             "text": "All 'Done' creteria met",
@@ -78,6 +75,9 @@
 
     },
     "direct_message": {
+
+    },
+    "ambient": {
 
     }
 }

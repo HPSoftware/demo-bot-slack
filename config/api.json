@@ -1,13 +1,13 @@
 {
     "default": "One API to rule them all",
     "all": {
-        ".*stat.*": {
-            "text": "The API <API name> stats are:",
+        ".*stat.*IGetPatientsData.*": {
+            "text": "The API IGetPatientsData stats are:",
             "attachments": [{
-                "title": "this is propel?",
-                "text": "stats in text",
-                "color": "#FFFF00",
-                "image_url": "http://i.stack.imgur.com/VIqhs.png",
+                "title": "IGetPatientsData",
+                "text": "Usage and performance data",
+                "color": "#DFD420",
+                "image_url": "https://c7.staticflickr.com/8/7451/27360227846_ab72fc00ef_b.jpg",
                 "mrkdwn_in": ["text"]
             }]
         },
@@ -16,19 +16,6 @@
         },
         ".*give.*example.*": {
             "text": "format example in code syntax"
-        },
-        ".*policy.*": {
-            "text": "table of policy: colums are private/public, rows are access/store/share"
-        },
-        ".*performance.*status.*": {
-            "text": "API <API name> usage rate exceeds contract expectations, consider optimzing code or reaching to API owner for validation:",
-            "attachments": [{
-                "title": "API usage graph",
-                "text": "details",
-                "color": "#7CD197",
-                "image_url": "<url to API usage image>",
-                "mrkdwn_in": ["text"]
-            }]
         }
     },
     "direct_mention": {
@@ -36,5 +23,24 @@
     },
     "direct_message": {
 
+    },
+    "ambient": {
+        ".*API.*IGetPatientsData.*added.*": {
+            "text": "I see you're using IGetPatientsData. The data policy for this API is as follows:",
+            "attachments": [{
+                "title": "Policy details for IGetPatientsData",
+                "image_url": "https://c4.staticflickr.com/8/7337/27324332891_56fa5be9e2_z.jpg",
+                "mrkdwn_in": ["text"]
+            }]            
+        },
+        ".*Setting.*network.*conditions.*vpn-high-capacity.*staging.*": {
+            "text": "API IGetPatientsData usage rate exceeds contract expectations, consider optimzing code or reaching to API owner for validation:",
+            "attachments": [{
+                "title": "IGetPatientsData usage graph",
+                "color": "#7ec0ee",
+                "image_url": "https://c7.staticflickr.com/8/7451/27360227846_ab72fc00ef_b.jpg",
+                "mrkdwn_in": ["text"]
+            }]
+        }
     }
 }

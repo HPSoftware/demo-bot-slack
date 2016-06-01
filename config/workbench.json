@@ -28,14 +28,15 @@
             }]
         },
         ".*select.*template.*1": {
-            "text": "gotcha - your request is assigned #123. To track provisioning progress, @workbench-bot: track #123"
+            "text": "gotcha - your request is assigned #19238. To track provisioning progress, @workbench-bot: track #123"
         },
-        ".*track.*123": {
-            "text": "Here's the status of your request #123:",
+        ".*track.*19.*": {
+            "text": "Here's the status of your request #19238:",
             "attachments": [{
-                "title": "Request #123 - status completed",
+                "title": "Request #19238 - resolved",
                 "text": "MBaaS url: https://acmicare.mbaas.com/scalene\nAndroidIDE url: https://msast001pngx.saas.acmi.com/aide/scalene\nALM url (project): https://hpe001alm.saas.acmi.com:8080/\ngit url: ssh://git.saas.acmi.com/scalene",
                 "color": "#7CD197",
+                "image_url": "https://c1.staticflickr.com/8/7290/26785863984_c2490deb48_m.jpg",
                 "mrkdwn_in": ["text"]
             }]
         },
@@ -47,43 +48,19 @@
             "attachments": [{
                 "title": "Workbench SCALENE services status",
                 "color": "#7CD197",
-                "image_url": "http://www.ceeview.com/wp-content/uploads/2014/01/Ceeview-Service-Dashboard.png",
+                "image_url": "https://c5.staticflickr.com/8/7357/27117966860_aab6aa4ba0_b.jpg",
                 "mrkdwn_in": ["text"]
             }]
         },
         ".*add.*API.*": {
-            "text": "API <API-NAME> added to project model\nAPI <API-NAME> direct route added to MBaaS\nAPI <API-NAME> stub added to git repo, at /etc/etc/what/here"
+            "text": "API IGetPatientsData added to project model\nAPI <API-NAME> direct route added to MBaaS\nAPI <API-NAME> stub added to git repo, at /etc/etc/what/here"
         },
         ".*real.*devices.*": {
-            "text": "The following mobile devices are available for your project:",
+            "text": "Select devices using @workbench-bot: select devices 1,2-4 etc",
             "attachments": [{
-                "title": "<device type/name>, Android 5.1, <location>",
+                "title": "Available devices from IT and cloud providers",
                 "color": "#7CD197",
-                "image_url": "<url of location on google maps>",
-                "mrkdwn_in": ["text"]
-            },
-            {
-                "title": "<device type/name>, Android 6.0, <location>",
-                "color": "#7CD197",
-                "image_url": "<url of location on google maps>",
-                "mrkdwn_in": ["text"]
-            },
-            {
-                "title": "<device type/name>, Android 6.0, <location>",
-                "color": "#7CD197",
-                "image_url": "<url of location on google maps>",
-                "mrkdwn_in": ["text"]
-            },
-            {
-                "title": "<device type/name>, iOS 9.0, <location>",
-                "color": "#7CD197",
-                "image_url": "<url of location on google maps>",
-                "mrkdwn_in": ["text"]
-            },
-            {
-                "title": "<device type/name>, iOS 9.0, <location>",
-                "color": "#7CD197",
-                "image_url": "<url of location on google maps>",
+                "image_url": "https://c1.staticflickr.com/8/7435/26786189224_7951746f5e_b.jpg",
                 "mrkdwn_in": ["text"]
             }]
         },
@@ -102,11 +79,8 @@
                 "mrkdwn_in": ["text"]
             }]
         },
-        ".*push.*": {
-            "text": "Initating gradual release of feature <name>. Track @hpesw-bot track release"
-        },
-        ".*track.*release.*": {
-            "text": "Feature <name> currently exposed to 15%, no detected issues",
+        ".*track.*deploy.*": {
+            "text": "Feature 'Patient sync' currently exposed to 15%, no detected issues",
             "attachments": [{
                 "title": "Feature exposure image",
                 "text": "AppPulse Mobile demographics split, quality metrics",
@@ -123,5 +97,28 @@
     },
     "direct_message": {
 
+    },
+    "ambient": {
+        ".*my.*feature.*ready.*": {
+            "text": "Feature pipeline completed, status report:\nWarning: security policy was not fully validated (missing security checks)",
+            "attachments": [{
+                "title": "Feature piepline dashboard",
+                "color": "#DFD420",
+                "image_url": "https://c1.staticflickr.com/8/7094/26787205824_0dee8cdf73_b.jpg",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*will.*get.*it.*": {
+            "text": "Feature pipeline completed successfully",
+            "attachments": [{
+                "title": "Feature piepline dashboard",
+                "color": "#7CD197",
+                "image_url": "https://c8.staticflickr.com/8/7411/26787879143_c7733414f6_b.jpg",
+                "mrkdwn_in": ["text"]
+            }]
+        },
+        ".*Feature pipeline completed successfully.*": {
+            "text": "Feature deploy start, to track progress @workbench-bot: track deploy (in feature channel)"
+        }
     }
 }

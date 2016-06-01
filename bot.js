@@ -38,11 +38,18 @@ bot.startRTM(function(err, bot, payload) {
 
 /* slack infra */
 
-function botReply(bot, message, message_map_category) {
-    var message_keys = Object.keys(message_map.all).concat(
-        Object.keys(message_map[message_map_category]));
+function botReply(bot, message, message_map_category, is_any) {
+    var message_keys = null;
+    if (!is_any)
+        message_keys = Object.keys(message_map.all).concat(
+            Object.keys(message_map[message_map_category]));
+    else
+        message_keys = Object.keys(message_map[message_map_category]);
 
-    console.log('HDM bot all+' + message_map_category + ' keys: ' + message_keys.length);
+    if (!is_any)
+        console.log('HDM bot all+' + message_map_category + ' keys: ' + message_keys.length);
+    else
+        console.log('HDM bot ' + message_map_category + ' keys: ' + message_keys.length);
 
     var replied = false;
 
@@ -62,7 +69,7 @@ function botReply(bot, message, message_map_category) {
             }
         }
     });
-    if (!replied)
+    if (!replied && !is_any)
         bot.reply(message, message_map.default);
 }
 
@@ -70,12 +77,20 @@ function botReply(bot, message, message_map_category) {
 controller.on('direct_mention', function(bot, message) {
     console.log('HDM bot direct mention: ' + JSON.stringify(message));
     // reply to _message_ by using the _bot_ object
-    botReply(bot, message, "direct_mention");
+    botReply(bot, message, "direct_mention", false);
 });
 
 // reply to a direct message
 controller.on('direct_message', function(bot, message) {
     console.log('HDM bot direct message');
     // reply to _message_ by using the _bot_ object
-    botReply(bot, message, "direct_message");
+    botReply(bot, message, "direct_message", false);
+});
+
+// reply to a message on the channel
+controller.on('ambient', function(bot, message) {
+    console.log('HDM bot ambient message');
+    //console.log('HDM bot ambient message: '+require('util').inspect(message, {depth: 4}));
+    // reply to _message_ by using the _bot_ object
+    botReply(bot, message, "ambient", true);
 });
