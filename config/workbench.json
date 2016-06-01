@@ -80,10 +80,11 @@
             }]
         },
         ".*track.*deploy.*": {
-            "text": "Feature 'Patient sync' currently exposed to 15%, no detected issues",
+            "text": "Feature 'Patient sync' currently exposed to 15%, *some issues detected*",
             "attachments": [{
                 "title": "Feature exposure map",
-                "image_url": "https://c3.staticflickr.com/8/7308/27120455770_29c82aa9da_b.jpg",
+                "image_url": "https://c4.staticflickr.com/8/7442/26789355483_fc39f0c756_b.jpg",
+                "color": "#FF0000",
                 "mrkdwn_in": ["text"]
             }]
         },
