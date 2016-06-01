@@ -1,7 +1,7 @@
 {
     "default": "I have no clue what y'all saying!",
     "all": {
-        ".*alm.*task.*get.*": {
+        ".*alm.*get.*task.*": {
             "text": "This is what you should work on today:",
             "attachments": [{
                 "title": "Task item title",
@@ -21,7 +21,7 @@
                 "mrkdwn_in": ["text"]
             }]
         },
-        ".*quality.*status.*": {
+        ".*release.*status.*": {
             "text": "Your feature is doing well!",
             "attachments": [{
                 "title": "Quality report/graphs from ALM, per feature",
@@ -31,10 +31,20 @@
                 "mrkdwn_in": ["text"]
             }]
         },
+        ".*apppulse.*get.*": {
+            "text": "Metrics for 'all networks' filter:",
+            "attachments": [{
+                "title": "Perfromance trend graph",
+                "text": "details",
+                "color": "#7CD197",
+                "image_url": "<url to quality image>",
+                "mrkdwn_in": ["text"]
+            }]
+        },
         ".*network.*profiles.*": {
             "text": "There are 3 available network profiles for your project: vpn-low, vpn-medium, vpn-high-capacity."
         },
-        ".*enable.*network.*": {
+        ".*create.*run.*": {
             "text": "Setting network conditions per profile vpn-high-capacity on staging environment."
         },
         ".*load.*staging.*": {
