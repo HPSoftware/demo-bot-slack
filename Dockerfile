@@ -1,4 +1,4 @@
-FROM iron/node
+FROM node:5.3-slim
 
 WORKDIR /demo-bot-slack
 ADD . /demo-bot-slack
