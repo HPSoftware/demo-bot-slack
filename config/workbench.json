@@ -7,13 +7,13 @@
                 "title": "#1 MBaaS/Android/IDE/git delivery template",
                 "text": "This template provisions:\n* an MBaaS tenant\n* AndroidIDE tenant\n* connected git repo\n* ALM project",
                 "color": "#7CD197",
-                "image_url": "https://lh3.googleusercontent.com/-L2LfZAGb2s8/VzLCzMiQH-I/AAAAAAAAEbU/rhL3tw7Uak89OYAOe4naobf-uwAj_usPwCCo/s800/image-management-mobile-apps-grpc.png",
+                "image_url": "https://c1.staticflickr.com/8/7214/27314466352_e710cdd812_b.jpg",
                 "mrkdwn_in": ["text"]
             }, {
                 "title": "#2 MBaaS/iOS/Android integration template",
                 "text": "This template provisions:\n* an MBaaS Queue tenant\n* Android/iOS connectors",
                 "color": "#7CD197",
-                "image_url": "https://lh3.googleusercontent.com/-2EKNgNc5gVw/VzLCzfy4ciI/AAAAAAAAEbg/EWcqP540fqwfn-PZNOBXVdpEw6MQdL2KwCCo/s604/ops-continuum.png",
+                "image_url": "https://c5.staticflickr.com/8/7120/27314465852_9d088db485_b.jpg",
                 "mrkdwn_in": ["text"]
             }]
         },
@@ -23,7 +23,7 @@
                 "title": "#1 MBaaS/Android/IDE/git delivery template (custom)",
                 "text": "This template provisions:\n* an MBaaS tenant (on public cloud)\n* AndroidIDE tenant\n* connected git repo (on private cloud)\n* ALM project",
                 "color": "#7CD197",
-                "image_url": "https://lh3.googleusercontent.com/-L2LfZAGb2s8/VzLCzMiQH-I/AAAAAAAAEbU/rhL3tw7Uak89OYAOe4naobf-uwAj_usPwCCo/s800/image-management-mobile-apps-grpc.png",
+                "image_url": "https://c1.staticflickr.com/8/7369/26804421864_c061ca9325_b.jpg",
                 "mrkdwn_in": ["text"]
             }]
         },
