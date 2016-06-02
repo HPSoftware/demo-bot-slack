@@ -53,7 +53,7 @@
             }]
         },
         ".*add.*API.*": {
-            "text": "API IGetPatientsData added to project model\nAPI <API-NAME> direct route added to MBaaS\nAPI <API-NAME> stub added to git repo, at /etc/etc/what/here"
+            "text": "API IGetPatientsData added to project model\nAPI IGetPatientsData direct route added to MBaaS\nAPI IGetPatientsData stub added to git repo, at /etc/etc/what/here"
         },
         ".*real.*devices.*": {
             "text": "Select devices using @workbench-bot: select devices 1,2-4 etc",
