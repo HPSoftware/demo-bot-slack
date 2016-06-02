@@ -117,7 +117,7 @@
                 "mrkdwn_in": ["text"]
             }]
         },
-        ".*Feature pipeline completed successfully.*": {
+        ".*Feature.*completed.*successfully.*": {
             "text": "Feature deploy start, to track progress @workbench-bot: track deploy (in feature channel)"
         }
     }
