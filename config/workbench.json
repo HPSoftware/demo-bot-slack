@@ -99,24 +99,6 @@
 
     },
     "ambient": {
-        ".*my.*feature.*ready.*": {
-            "text": "Feature pipeline completed, status report:\nWarning: security policy was not fully validated (missing security checks)",
-            "attachments": [{
-                "title": "Feature piepline dashboard",
-                "color": "#DFD420",
-                "image_url": "https://c1.staticflickr.com/8/7094/26787205824_0dee8cdf73_b.jpg",
-                "mrkdwn_in": ["text"]
-            }]
-        },
-        ".*will.*get.*it.*": {
-            "text": "Feature pipeline completed successfully",
-            "attachments": [{
-                "title": "Feature piepline dashboard",
-                "color": "#7CD197",
-                "image_url": "https://c8.staticflickr.com/8/7411/26787879143_c7733414f6_b.jpg",
-                "mrkdwn_in": ["text"]
-            }]
-        },
         ".*Feature.*completed.*successfully.*": {
             "text": "Feature deploy start, to track progress @workbench-bot: track deploy (in feature channel)"
         }
