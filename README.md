@@ -15,7 +15,8 @@ This is an implementaion of a simple Slack bot, based on node.js and the [botkit
 ## Conversation configuration file format
 
 demo-bot-slack is using json to match types of messages->keywords->replies.
-A first key of `default` specifies what the bot will answer if no match is found. A second key of `all` specifies keywords that will be matched on all event types. Subsequent keys will specify the event name and a list of keywords to match.
+A first key of `default` specifies what the bot will answer if no match is found. A second key of `all` specifies keywords that will be matched on all direct events (mention and message). Specific responses can be place under 'direct_mention' or 'direct_message'. Lastly, the 'ambient' key lists keywords and responses for messages not mentioning the bot at all.
+
 All keyword keys will be matched as javascript regular expressions, and can use any regexp expression format. Reply format is [Slack's message format](https://api.slack.com/docs/formatting), including attachments.
 ```
 {
@@ -34,13 +35,17 @@ All keyword keys will be matched as javascript regular expressions, and can use 
 		'.*keyword.*3': {'text': 'reply text'}
 	},
 	'direct_message': {
+	},
+	'ambient': {
 	}
 }
 ```
-The bot will match keywords by the following order:
+The bot will match keywords by the following order, for messages referencing the bot:
 - Keywords under the `all` category, from top to bottom
 - Keywords in subsequent categories (top to bottom for both categories and keywords within)
 - If no match was found, the default reply
+For messages not referencing the bot, but on a channel with the bot, the only lookup is only for keywords listed under 'ambient'.
+
 If a match is found, the reply is sent and the lookup is done (i.e. you can't match more than one reply to an event).
 
 ## License
