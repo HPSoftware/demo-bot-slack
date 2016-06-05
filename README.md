@@ -35,7 +35,7 @@ All keyword keys will be matched as javascript regular expressions, and can use 
 		'.*keyword.*3': {'text': 'reply text'}
 	},
 	'direct_message': {
-	}
+	},
 	'ambient': {
 	}
 }
